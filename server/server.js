@@ -5,10 +5,11 @@
 
 'use strict';
 
-var loopback = require('loopback');
-var boot = require('loopback-boot');
+const loopback = require('loopback');
+const boot = require('loopback-boot');
+const websocket = require('./middleware/websocket');
 
-var app = module.exports = loopback();
+const app = module.exports = loopback();
 
 app.start = function() {
   // start the web server
@@ -30,5 +31,6 @@ boot(app, __dirname, function(err) {
 
   // start the server if `$ node server.js`
   if (require.main === module)
-    app.start();
+    //app.start();
+    websocket.wsListener(app.start(), app);
 });
