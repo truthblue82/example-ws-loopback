@@ -13,38 +13,35 @@
       "./mixins"
     ]
   },
-  "User": {
-    "dataSource": "db"
-  },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": false
   },
   "users": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": true
   },
   "post": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": true
   },
   "comment": {
-    "dataSource": "db",
+    "dataSource": "blog",
     "public": true
   }
 }

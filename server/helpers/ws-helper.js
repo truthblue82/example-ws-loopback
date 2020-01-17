@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 const async = require('asyncawait/async');
 const await = require('asyncawait/await');
-const specialModel = require('../constants/spcecial-model');
+const specialModel = require('../constants/special-model');
 const parser = require('url-parse');
 
 let urlParser = function(url) {
